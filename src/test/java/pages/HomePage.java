@@ -13,10 +13,5 @@ public class HomePage {
 
 
 
-    public void testAssertion(String actual, String expected) throws InterruptedException {
-
-        Assert.assertEquals(actual,expected);
-
     }
 
-}
