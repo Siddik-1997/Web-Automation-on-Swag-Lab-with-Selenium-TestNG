@@ -56,7 +56,9 @@ TestNG is a testing framework for Java that is designed to be more flexible and 
 
 ## Automation Output Video:
 
-https://user-images.githubusercontent.com/123433625/221357629-68d30040-5fd8-4e42-924b-3955d637beb5.mp4
+https://github.com/Siddik-1997/Web-Automation-on-Swag-Lab-with-Selenium-TestNG/assets/123433625/ba833611-083f-4bf2-96f6-26cc9bbf21ac
+
+
 
 
 
