@@ -55,8 +55,6 @@ public class CartPage {
         Thread.sleep(300);
         btnContinue.click();
         btnFinish.click();
-
-
     }
 
     }

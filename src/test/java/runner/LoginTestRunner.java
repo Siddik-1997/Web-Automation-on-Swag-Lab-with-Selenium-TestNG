@@ -4,7 +4,6 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.CartPage;
 import pages.LoginPage;
 import utils.Setup;
 import utils.Utility;
@@ -30,9 +29,18 @@ public class LoginTestRunner extends Setup {
     @Test(priority = 2, description = "Login with Valid credentials")
     public void doLogin() throws IOException, ParseException {
         loginPage = new LoginPage(driver);
+        String userName, password;
         JSONObject userObject = Utility.loadJSONFile("./src/test/resources/User.json");
-        String userName= (String) userObject.get("userName");
-        String password= (String) userObject.get("password");
+        if (System.getProperty("username")!=null && System.getProperty("password")!=null){
+            userName=System.getProperty("username");
+            password= System.getProperty("password");
+        }
+        else {
+            userName= (String) userObject.get("userName");
+            password= (String) userObject.get("password");
+        }
+
+
         loginPage.clearField();
         loginPage.doLogin(userName,password);
 
